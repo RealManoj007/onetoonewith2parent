@@ -10,9 +10,9 @@ public class Emp {
 
     private String empName;
 
-//    @OneToOne(mappedBy = "emp",  cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "emp",  cascade = CascadeType.ALL)
 //    @JoinColumn(referencedColumnName = "mobid")
-//    private Mobile mobile;
+    private Mobile mobile;
 
     @OneToOne
     Pen pen;
@@ -33,7 +33,7 @@ public class Emp {
         this.pen = pen;
     }
 
-    //    public Mobile getMobile() {
+//        public Mobile getMobile() {
 //        return mobile;
 //    }
 //

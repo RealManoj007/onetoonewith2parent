@@ -11,19 +11,19 @@ public class Mobile {
 
     private String mobileName;
 
-//    @OneToOne
-//    private Emp emp;
+    @OneToOne
+    private Emp emp;
 
     @OneToOne
     Pen pen;
 
-//    public Emp getEmp() {
-//        return emp;
-//    }
-//
-//    public void setEmp(Emp emp) {
-//        this.emp = emp;
-//    }
+    public Emp getEmp() {
+        return emp;
+    }
+
+    public void setEmp(Emp emp) {
+        this.emp = emp;
+    }
 
     public int getId() {
         return mobid;
